@@ -1,0 +1,343 @@
+
+// Colors
+$yellow: #b9d3ff
+$blue: #2979ff
+$blue-light: #0060ff
+$gray-light: #EEE
+$gray-mid: #999
+$gray-dark: #333
+$gray-black: #111
+$white: #FFF
+
+
+// Global components =====================================================
+
+.bg-white
+	background: $white
+
+.center
+	text-align: center
+
+.vh-center
+	position: absolute
+	left: 50%
+	top: 50%
+	transform: translate(-50%, 0%)	
+	text-align: center
+
+.pad-10
+	padding: 10px 0
+
+.pad-30
+	padding: 30px 0
+
+.pad-50
+	padding: 50px 0
+
+.pad-80
+	padding: 80px 0
+
+.pad-xy
+	padding: 20px
+
+.btn-round
+	display: inline-block
+	min-height: 50px
+	line-height: 50px
+	border-radius: 50px
+	padding: 0 1.3em
+	margin: 15px 5px 0 5px
+	color: $white
+	font-size: 18px
+	border: 0
+	background: $blue
+	transition: all ease .2s
+
+.btn-round:hover
+	cursor: pointer
+	color: #fff
+	background: $blue-light	
+	text-decoration: none
+
+.circle
+	display: inline-block
+	margin: 15px auto
+	border-radius: 50%
+	background: rgba(255,255,255,.2)
+	padding: 50px
+
+.container-half
+	width: 50%
+	max-width: 600px
+	margin: auto
+
+// Header & navigation ===============================================================
+
+html,body
+	background: $gray-light
+
+#menu
+	background: $blue
+	.navbar-toggler, .navbar-nav
+		float: right
+
+#logo
+	width: 60px
+	height: 60px
+
+#about
+	background: #87e0fd // Old browsers
+	background: linear-gradient(45deg,  #87e0fd 0%,#53cbf1 40%,#05abe0 100%) // W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#87e0fd', endColorstr='#05abe0',GradientType=1 ) // IE6-9 fallback on horizontal gradient
+
+
+// Projects =============================================================================
+
+#category-filter
+	margin-bottom: 40px
+
+.project
+	display: block
+	position: relative
+	margin-bottom: 30px
+
+	h5
+		color: $blue
+		padding-top: 10px
+		margin-bottom: 5px
+	p
+		font-size: 14px
+		line-height: 1.2em
+		color: $gray-mid
+
+	.bg-img
+		position: relative
+		background: $blue
+		border-radius: 4px
+
+	.overlay
+		opacity: 0
+		z-index: 99
+		transition: all .5s
+
+	.overlay span 
+		color: $white
+		display: block
+		margin-top: 10px
+
+	.arrowright
+		width: 54px
+		height: 50px
+
+	.thumb	
+		opacity: 1
+		width: 100%
+		height: auto
+		-webkit-backface-visibility: hidden
+		transition: opacity .5s
+		border-radius: 4px
+
+	:hover
+		text-decoration: none
+
+	:hover .thumb
+		opacity: 0.5
+
+	:hover .vh-center
+		opacity: 1
+		transform: translate(-50%, -50%)
+
+.big-icon
+	width: 100px
+	height: 100px
+	margin: 25px auto
+
+#team
+	overflow: hidden
+	background: url('../img/pat-squares.png') repeat
+	h2
+		color: $gray-light
+	h4
+		color: $gray-dark
+	img
+		width: 100%
+		height: auto
+
+.container-x
+	width: 90%
+	margin: auto
+	max-width: 1200px
+
+.row-neg
+	margin: 0 -1%
+
+.col-4
+	width: 23%
+	float: left
+	margin: 1%
+	background: $white
+	border-radius: 4px
+
+
+// Vaardigheden ============================================================================
+
+/* FlexBox Alternative for <IE-11 Support:  
+	http://matthewjamestaylor.com/blog/equal-height-columns-cross-browser-css-no-hacks */
+
+#vaardigheden .row-x
+	display: flex
+	flex-wrap: wrap
+	background: $white
+
+#vaardigheden .col-3    
+	width: 33.33%
+	padding: 4% 5%
+	text-align: center
+
+#vaardigheden
+	.icon
+		width: 50px
+		height: 50px
+		margin: 10px auto 
+	h2
+		font-size: 24px
+
+.col-a, .col-c, .col-e
+	background: $yellow
+
+
+// CONTACT ===============================================================================
+
+#contactform input
+	margin-bottom: 10px
+
+#map
+	line-height: 0
+	background: $blue
+	overflow: hidden
+
+.col-2
+	width: 50%
+	float: left
+
+#openingsuren
+	padding: 5% 5% 0 5%
+	line-height: 1.5
+	color: $white
+	p 
+		margin: 0
+
+#googlemaps
+	width: 100%
+	height: 400px
+
+// footer =======================================================================
+
+footer	
+	clear: both
+
+.circle-small
+	@extend .circle
+	padding: 40px
+	border: solid 4px #ddd 	
+	background: rgba(255,255,255,.6)
+
+.footerlink
+	display: block
+	margin-top: 10px
+
+#socialmedia
+	background: $blue
+
+.round-wrap
+	display: inline-block
+	background: rgba(255,255,255,.3)
+	border-radius: 50px
+	padding: 10px 15px
+
+.social-icon
+	width: 40px
+	height: 40px
+	margin: 10px
+	border-radius: 50%
+	transition: transform .25s ease-in-out
+
+.social-icon:hover
+	transform: scale(1.3)
+
+#socialmedia a
+	text-decoration: none
+	
+#copyright
+	background: $gray-black
+	p
+		padding: 1em
+		margin: 0
+		color: $gray-mid
+
+
+// MEDIA QUERIES ===================================================================
+
+// bootstrap break-sizes: 576 | 768 | 992 | 1200
+
+@media (max-width: 1023px)
+	#vaardigheden .col-3
+		width: 50%
+	.col-a, .col-d, .col-e
+		background: $yellow
+	.col-b, .col-c, .col-f
+		background: transparent
+	
+	.container-x
+		max-width: 700px
+
+	.col-4
+		width: 48%
+
+
+@media (max-width: 992px)
+	.col-sm-4
+		width: 50%
+	.col-2
+		width: 100%
+	#openingsuren
+		padding: 6%
+
+
+@media (max-width: 768px)
+	.navbar-nav
+		width: 100%
+		text-align: center
+		.nav-link
+			padding: 0.6rem
+	.navbar li 
+		border-top: solid 1px rgba(0,0,0,.2)
+		display: block
+
+	#vaardigheden .col-3
+		width: 100%
+		padding: 10%
+
+	.col-3
+		background: transparent
+	
+	.col-3:nth-child(odd)
+		background: $yellow
+
+	.col-sm-4
+		width: 100%
+
+	#menu 
+		.navbar-toggleable-sm
+			clear: both
+		ul.navbar-nav
+			float: left
+
+
+@media (max-width: 576px)
+	.container, .container-x, .container-half
+		width: 80%
+
+	.col-4
+		width: 100%
+		margin: 0 0 20px 0

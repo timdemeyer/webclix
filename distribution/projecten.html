@@ -61,14 +61,20 @@
 <section id="projecten" class="bg-white pad-30">
 
 	<div id="category-filter" class="container center pad-30">
+<!--
 		<a href="#" class="btn-round">Webdesign</a>
 		<a href="#" class="btn-round">Fotografie</a>
 		<a href="#" class="btn-round">Video</a>			
+-->
+		<a class="filter" href="javascript:;" data-filter="all">Show All</a> |
+		<a class="filter" href="javascript:;" data-filter=".category-1">Category 1</a> |
+		<a class="filter" href="javascript:;" data-filter=".category-2">Category 2</a>
 	</div>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-4 project">
+
+			<div class="col-sm-4 project mix category-1">
 				<a class="project" href="#">
 					<div class="bg-img">
 						<div class="overlay vh-center">
@@ -82,7 +88,7 @@
 				</a>
 			</div>
 
-			<div class="col-sm-4 project">
+			<div class="col-sm-4 project mix category-1">
 				<a class="project" href="#">
 					<div class="bg-img">
 						<div class="overlay vh-center">
@@ -96,7 +102,7 @@
 				</a>
 			</div>
 
-			<div class="col-sm-4 project">
+			<div class="col-sm-4 project mix category-2">
 				<a class="project" href="#">
 					<div class="bg-img">
 						<div class="overlay vh-center">
@@ -110,7 +116,7 @@
 				</a>
 			</div>
 
-			<div class="col-sm-4 project">
+			<div class="col-sm-4 project mix category-2">
 				<a class="project" href="#">
 					<div class="bg-img">
 						<div class="overlay vh-center">
@@ -122,9 +128,9 @@
 					<h5>Projectnaam</h5>
 					<p>Webdesign, Webontwikkeling, Google Analytics, Responsive</p>
 				</a>
-			</div>
-
-			<div class="col-sm-4 project">
+			</div>						
+	
+			<div class="col-sm-4 project mix category-2">
 				<a class="project" href="#">
 					<div class="bg-img">
 						<div class="overlay vh-center">
@@ -136,9 +142,9 @@
 					<h5>Projectnaam</h5>
 					<p>Webdesign, Webontwikkeling, Google Analytics, Responsive</p>
 				</a>
-			</div>
+			</div>	
 
-			<div class="col-sm-4 project">
+			<div class="col-sm-4 project mix category-1">
 				<a class="project" href="#">
 					<div class="bg-img">
 						<div class="overlay vh-center">
@@ -150,9 +156,9 @@
 					<h5>Projectnaam</h5>
 					<p>Webdesign, Webontwikkeling, Google Analytics, Responsive</p>
 				</a>
-			</div>
+			</div>	
 
-			<div class="col-sm-4 project">
+			<div class="col-sm-4 project mix category-1">
 				<a class="project" href="#">
 					<div class="bg-img">
 						<div class="overlay vh-center">
@@ -164,9 +170,9 @@
 					<h5>Projectnaam</h5>
 					<p>Webdesign, Webontwikkeling, Google Analytics, Responsive</p>
 				</a>
-			</div>
+			</div>	
 
-			<div class="col-sm-4 project">
+			<div class="col-sm-4 project mix category-2">
 				<a class="project" href="#">
 					<div class="bg-img">
 						<div class="overlay vh-center">
@@ -178,9 +184,9 @@
 					<h5>Projectnaam</h5>
 					<p>Webdesign, Webontwikkeling, Google Analytics, Responsive</p>
 				</a>
-			</div>												
+			</div>	
 
-			<div class="col-sm-4 project">
+			<div class="col-sm-4 project mix category-2">
 				<a class="project" href="#">
 					<div class="bg-img">
 						<div class="overlay vh-center">
@@ -192,8 +198,7 @@
 					<h5>Projectnaam</h5>
 					<p>Webdesign, Webontwikkeling, Google Analytics, Responsive</p>
 				</a>
-			</div>
-
+			</div>														
 
 		</div>
 	</div>
@@ -283,7 +288,8 @@
 
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
-	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="js/jquery.mixitup.min.js"></script>
+	<script src="js/scripts.js"></script>
 
 </body>
 </html>
